@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcologyTour</title>
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+    }
+    body{
+        background: #34a0a4;
+    }
+    header{
+        width: 100%;
+        height: 90px;
+        background-color: rgba(244,241,234,255);
+    }
+    .interior{
+        max-width: 100%;
+        padding: 0 10px;
+        margin: auto;
+    }
+    .logo{
+        float: left;
+        padding: 5px 20px 0;
+    }
+    .logo img{
+        height: 80px;
+    }
+    .logo img:hover{
+        transform: scale(1.1);
+    }
+    .navegacion{
+        float: right;
+        display: flex;
+        align-items: center;
+        min-height: 90px;
+        z-index: 1000;
+    }
+    .navegacion ul{
+        list-style: none;
+        padding: 0 10px;
+    }
+    .navegacion ul li{
+        display: inline-block;
+        position: relative;
+        transition: .3s linear;
+        z-index: 1000;
+    }
+    .navegacion ul li:hover{
+        transform: scale(1.1);
+    }
+    .navegacion ul li a{
+        color: #000000;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 12px 20px;
+        transition: .3s linear;
+    }
+    .navegacion ul li a:hover{
+        color: #00c9bd;
+        transform: scale(1.1);
+    }
+    .navegacion ul li:hover .hijos{
+        display: block;
+    }
+    .navegacion .submenu .hijos{
+        display: none;
+        background: #f4f1ea;
+        position: absolute;
+        width: 120%;
+    }
+    .navegacion .submenu .hijos li{
+        display: block;
+        overflow: hidden;
+        border-bottom: none;
+        padding: auto;
+    }
+    .navegacion .submenu .hijos li a{
+        display: block;
+    }
+    .contenido{
+        
+        width: 1000px;
+        height: 280px;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+    }
+    .bienvenido{
+        
+        width: 600px;
+        height: 280px;
+        margin: 10px;
+
+    }
+    .imagen{
+        float: right;
+        width: 370px;
+        height: 280px;
+        margin: 10px;
+        
+        
+    }
+    .nosotros{
+        width: 1000px;
+        height: 350px;
+        
+        margin: auto;
+        margin-top: 20px;
+    }
+    .portada{
+        max-width: 100%;
+        
+        
+    }
+    .lugares{
+        width: 900px;
+        margin: auto;
+        height: 650px;
+        overflow: hidden;
+        
+    }
+    .item{
+        width: 280px;
+        height: 280px;
+        float: left;
+        margin: 10px;
+    }
+    .item img:hover{
+        transform: scale(1.3);
+    }
+    .mapa{
+        margin:auto;
+    }
+    .redes{
+        width: 600px;
+        margin: auto;
+        height: 150px;
+        overflow: hidden;
+    }
+    .itemc{
+        width: 120px;
+        height: 120px;
+        float: left;
+        margin: 10px;
+    }
+    .itemc img:hover{
+        transform: scale(1.3);
+    }
+    .contenedor{
+            height: 500px;
+            width: 40%;
+            margin: auto;
+            margin-top: 3%;
+            border: 1px solid black;
+        }
+        .textfield{
+            width: 90%;
+            height: 190px;
+            margin: auto;
+            margin-top: 10px;
+            border: 1px solid black;
+        }
+        .btnEnviar{
+            width: 280px;
+            background: #0066cc;
+            color: #eee;
+            margin: auto;
+            padding: 10px;
+            margin-left: 30%;
+            margin-top: 1%;
+        }
+        fieldset input[type="text"]{
+            width: 80%;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+        fieldset input[type="email"]{
+            width: 80%;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+        fieldset input[type="tel"]{
+            width: 80%;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+        .sg{
+
+            margin-left: 37%;
+            margin-top: 10px;
+        }
+        .sg2{
+            margin-left: 28%;
+            margin-top: 10px;
+        }
+        .contenedor2{
+            height: 570px;
+            width: 40%;
+            margin: auto;
+            margin-top: 3%;
+            border: 1px solid black;
+        }
+        .textfield2{
+            width: 90%;
+            height: 230px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="interior">
+          <a href="" class="logo" target="blank"><img src="img/logo2.png" alt="Logo"></a>
+          <nav class="navegacion">
+            <ul>
+              <li><a href="" target="blank">Inicio</a></li>
+              <li><a href="" target="blank">Acerca de</a></li>
+              <li class="submenu">
+                <a href="" target="blank">DESTINOS</a>
+                <ul class="hijos">
+                  <li><a href="">Paracas</a></li>
+                  <li><a href="">Tuquillo</a></li>
+                  <li><a href="">Huaral</a></li>
+                  <li><a href="">Lunahuana</a></li>
+                  <li><a href="">La Mina</a></li>
+                </ul>
+              </li>
+              <li><a href="" target="blank">Contacto</a></li>
+              <li><a href="" target="blank">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="portada">
+        
+        <img src="img/portada2.jpg" width="100%" alt="">
+      </div>
+      <div class="contenido">
+        <div class="bienvenido">
+            <p>¡Bienvenidos a BG Travel and Tours! Somos una agencia de turismo dedicada a crear experiencias de viaje extraordinarias y a brindar servicios de alta calidad a nuestros clientes. Con un enfoque en la excelencia y la atención personalizada, nos esforzamos por superar las expectativas y garantizar que cada viaje sea inolvidable.</p>
+                <br>
+            <p>En BG Travel and Tours, comprendemos que cada persona tiene diferentes sueños y deseos de viaje. Por eso, nos dedicamos a diseñar itinerarios personalizados que se adapten a tus preferencias y necesidades individuales. Ya sea que estés buscando unas vacaciones relajantes en la playa, una aventura llena de adrenalina en la naturaleza o una exploración cultural en ciudades fascinantes, estamos aquí para hacer tus sueños de viaje realidad.</p>
+                <br>
+        </div>
+        <div class="imagen">
+            <img src="img/img2.jpg" width="90%" alt="">
+        </div>
+      </div>
+      <div class="nosotros">
+        <h1>MISION</h1>
+        <br>
+        <p>Nuestra misión en BG Travel and Tours es proporcionar experiencias de viaje excepcionales y personalizadas, superando las expectativas de nuestros clientes. Nos esforzamos por ser una agencia de turismo confiable y de confianza, brindando servicios de alta calidad y creando recuerdos duraderos. Buscamos inspirar y enriquecer la vida de las personas a través de la exploración de destinos increíbles, promoviendo la diversidad cultural y el respeto por el entorno natural</p>
+        <br>
+        <h1>VISION</h1>
+        <br>
+        <p>Nuestra visión en BG Travel and Tours es convertirnos en líderes reconocidos en la industria de viajes y turismo, conocidos por nuestra excelencia en servicios, innovación y compromiso con la satisfacción total del cliente. Aspiramos a ser una agencia de viajes líder que marque la diferencia en la vida de las personas, creando experiencias de viaje memorables que promuevan el entendimiento cultural, el desarrollo sostenible y la conexión humana a nivel global.</p>
+        <br>
+        <h1>DESTINOS TURISTICOS</h1>
+      </div>
+      
+      <div class="lugares">
+        <div class="item">
+            <img src="img/Destinos/D1.png" width="100%" height="240px" alt="">
+        </div>
+        <div class="item">
+            <img src="img/Destinos/D2.png" width="100%" height="240px" alt="">
+        </div>
+        <div class="item">
+            <img src="img/Destinos/D3.png" width="100%" height="240px" alt="">
+        </div>
+        <div class="item">
+            <img src="img/Destinos/D4.png" width="100%" height="240px" alt="">
+        </div>
+        <div class="item">
+            <img src="img/Destinos/D5.png" width="100%" height="240px" alt="">
+        </div>
+        <div class="item">
+            <img src="img/Destinos/D6.png" width="100%" height="240px" alt="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1>CONTACTO</h1>
+      </div>
+      <br>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.3225664855845!2d-77.03792767500121!3d-11.88261238834155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d0c05c6be3f3%3A0xcf2e284e7f54f90f!2sUrb%20Santo%20Domingo%20Etapa%202%2C%20Carabayllo%2015318!5e0!3m2!1ses-419!2spe!4v1685979278088!5m2!1ses-419!2spe" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="redes">
+        <div class="itemc">
+            <img src="img/fb.png" width="100%" alt="">
+        </div>
+        <div class="itemc">
+            <img src="img/wap.png" width="100%" alt="">
+        </div>
+        <div class="itemc">
+            <img src="img/gmail.png" width="100%" alt="">
+        </div>
+        <div class="itemc">
+            <img src="img/contacto.png" width="100%" alt="">
+        </div>
+      </div>
+      <div class="contenedor">
+        <h2 class="sg">SUGERENCIAS</h2>
+        <form action="">
+            <fieldset class="textfield">
+                <legend>DATOS PERSONALES</legend>
+                <input name="tfield" type="text" id="txtNombres" name="txtNombres" required placeholder="Ingrese Sus Nombres"><br>
+                <input name="tfield" type="text" id="txtApellidos" name="txtApellidos" required placeholder="Ingrese Sus Apellidos"><br>
+                <input name="tfield" type="text" id="txtDni" name="txtDni" required placeholder="Ingrese su Dni"><br>
+                <input name="tfield" type="email" id="txtEmail" name="txtEmail" required placeholder="Ingrese su Correo Electronico"><br>
+            </fieldset>
+            <fieldset class="textfield">
+                <legend>SUGERENCIA</legend>
+                <textarea name="txtSugerencia" id="txtSugerencia" cols="30" rows="10" style=" margin-top:10px; width: 550px; height: 150px; margin-left: 40px;"></textarea><br>
+            </fieldset>
+            <input class="btnEnviar" type="submit" id="btnEnviar" name="btnEnviar" placeholder="Enviar">
+        </form>
+    </div>
+    <div class="contenedor2">
+        <h2 class="sg2">LIBRO DE RECLAMACIONES</h2>
+        <form action="">
+            <fieldset class="textfield2">
+                <legend>DATOS PERSONALES</legend>
+                <input name="tfield" type="text" id="txtNombres" name="txtNombres" required placeholder="Ingrese Sus Nombres"><br>
+                <input name="tfield" type="text" id="txtApellidos" name="txtApellidos" required placeholder="Ingrese Sus Apellidos"><br>
+                <input name="tfield" type="text" id="txtDni" name="txtDni" required placeholder="Ingrese su Dni"><br>
+                <input name="tfield" type="email" id="txtEmail" name="txtEmail" required placeholder="Ingrese su Correo Electronico"><br>
+                <input name="tfield" type="tel" id="txtTel" name="txtTel" required
+                 placeholder="Ingrese Su numero telefonico"> <br>
+            </fieldset>
+            <fieldset class="textfield2">
+                <legend>RECLAMO</legend>
+                <textarea name="txtSugerencia" id="txtSugerencia" cols="30" rows="10" style="height: 185px; width: 550px; margin-left: 40px;" placeholder="Ingrese su reclamo"></textarea><br>
+            </fieldset>
+            
+            <input class="btnEnviar" type="submit" id="btnEnviar" name="btnEnviar" placeholder="Enviar">
+            
+        </form>
+        
+    </div>
+</body>
+</html>
