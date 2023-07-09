@@ -79,3 +79,35 @@ header{
 .navegacion .submenu .hijos li a{
     display: block;
 }
+.catalogo-vn {
+    width: 43%;
+    background: #00c9bd;
+    height: 300px;
+    margin: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    margin: auto;
+}
+.catalogo-vi {
+    width: 43%;
+    background: #00c9bd;
+    height: 300px;
+    margin: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    margin: auto;
+}
+.catalogo-o {
+    width: 15%;
+    background: #00c9bd;
+    height: 300px;
+    margin: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    margin: auto;
+}
+.item {
+    width: 250px;
+    float: left;
+    margin: 10px;
+}
